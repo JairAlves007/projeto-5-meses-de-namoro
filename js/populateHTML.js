@@ -20,10 +20,13 @@ letters = document.querySelectorAll("#words-container .word .letter");
 
 for (let i = 0; i < letters.length; i++) {
 	letters[i].addEventListener("click", () => {
-		document
-			.querySelectorAll(".letter.selected")[0]
-			.classList.remove("selected");
-
-		letters[i].classList.add("selected");
+		
+		if (!letters[i]?.classList.contains("correct")) {
+			document
+				.querySelectorAll(".letter.selected")[0]
+				.classList.remove("selected");
+			letters[i].classList.add("selected");
+		}
+		
 	});
 }
