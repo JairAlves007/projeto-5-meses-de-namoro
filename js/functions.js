@@ -19,7 +19,7 @@ function submitWord() {
 	}
 
 	for (let i = 0; i < sendWord.length; i++) {
-		delay += 300;
+		delay += 400;
 
 		setTimeout(() => {
 			rowStep[step].children.item(i).classList.add("flip");
@@ -83,7 +83,7 @@ function submitWord() {
 
 					alert("Não foi dessa vez, Amor! Tente novamente!");
 					
-				}, 400);
+				}, 500);
 
 			}
 		}
