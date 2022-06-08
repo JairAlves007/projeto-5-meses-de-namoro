@@ -3,7 +3,7 @@ const allLetters = document.querySelectorAll("#board .row-board .key");
 const btnEnter = document.getElementById("btn-enter");
 const btnDel = document.getElementById("btn-del");
 const wordsContainer = document.getElementById("words-container");
-const wordSelected = ["A", "M", "O", "R"];
+const wordSelected = ["O", "I", "T", "O"];
 
 const lettersAllowed = [
 	"A",
@@ -37,7 +37,7 @@ const lettersAllowed = [
 let rowStep;
 let letters;
 let step = 0;
-let chances = 6;
+let chances = 4;
 
 console.log(
 	"Feito com amor (e bastante estresse, programação, né KKKKKKKKKKKKKK), por Jair Alves, para Misleny Lima ❤️"
