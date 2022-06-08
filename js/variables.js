@@ -3,7 +3,7 @@ const allLetters = document.querySelectorAll("#board .row-board .key");
 const btnEnter = document.getElementById("btn-enter");
 const btnDel = document.getElementById("btn-del");
 const wordsContainer = document.getElementById("words-container");
-const wordSelected = ["I", "N", "F", "I", "N", "I", "T", "O"];
+const wordSelected = ["A", "M", "O", "R"];
 
 const lettersAllowed = [
 	"A",
