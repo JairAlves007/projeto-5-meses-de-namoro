@@ -94,6 +94,7 @@ function deleteLetter() {
 	const letters = rowStep[step].children;
 
 	for (let i = 0; i < letters.length; i++) {
+		letters.item(i).classList.remove("show");
 		if (letters.item(i).classList.contains("selected")) {
 			if (i > 0) {
 				letters.item(i).classList.remove("selected");
@@ -117,11 +118,19 @@ function writeLetters(letter) {
 			if (letters.item(i).classList.contains("selected")) {
 				letters.item(i).classList.add("show");
 				letters.item(i).innerHTML = letter.toUpperCase();
+				
+				setTimeout(() => {
+					letters.item(i).classList.remove("show");
+				}, 20);
 
 				if (i < letters.length - 1) {
 					letters.item(i).classList.remove("selected");
 					letters.item(++i)?.classList.add("selected");
 				}
+
+				// setTimeout(() => {
+				// 	letters.item(i).classList.remove("show");
+				// }, 200);
 			}
 		}
 	}
