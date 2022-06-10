@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova Palavra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="shortcut icon" href="./img/icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" href="./css/newWord.css">
+</head>
+<body>
+  <header>
+    <h2>
+      Nova Palavra
+    </h2>
+  </header>
+
+  <form autocomplete="off">
+    <input type="text" name="word" maxlength="10" placeholder="Nova palavra...">
+    <input type="number" name="chances" min="3" max="6" placeholder="Número de chances...">
+    <button type="submit">Enviar Palavra</button>
+  </form>
+
+  <script src="./js/newWord.js"></script>
+</body>
+</html>
