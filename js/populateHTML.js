@@ -1,8 +1,8 @@
-if (word) {
-	for (newLetter of word) {
-		wordSelected.push(newLetter);
-	}
-}
+// if (word) {
+// 	for (newLetter of word) {
+// 		wordSelected.push(newLetter);
+// 	}
+// }
 
 for (let i = 0; i < chances; i++) {
 	wordsContainer.innerHTML += `
