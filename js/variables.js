@@ -44,10 +44,3 @@ let chances = +localStorage.getItem('chances') > 0 ? +localStorage.getItem('chan
 console.log(
 	"Feito com amor (e bastante estresse, programação, né KKKKKKKKKKKKKK), por Jair Alves, para Misleny Lima ❤️"
 );
-
-if (word) {
-	for (newLetter of word) {
-		console.log(newLetter);
-		wordSelected.push(newLetter);
-	}
-}
