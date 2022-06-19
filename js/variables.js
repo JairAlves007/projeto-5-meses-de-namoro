@@ -3,10 +3,10 @@ const allLetters = document.querySelectorAll("#board .row-board .key");
 const btnEnter = document.getElementById("btn-enter");
 const btnDel = document.getElementById("btn-del");
 const wordsContainer = document.getElementById("words-container");
-const wordSelected = ["M", "E", "L", "H", "O", "R", "A", "S"];
+const wordSelected = ["I", "N", "F", "I", "N", "I", "T", "O"];
 
 // const word = localStorage.getItem('word');
-const chances = +localStorage.getItem('chances') > 0 ? +localStorage.getItem('chances') : 6;
+const chances = +localStorage.getItem('chances') > 0 ? +localStorage.getItem('chances') : 4;
 
 const lettersAllowed = [
 	"A",
